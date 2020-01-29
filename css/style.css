@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Montserrat&display=swap');
+
+body{
+    font-family: 'Montserrat','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: whitesmoke;
+}
+
+main{
+    width: 80%;
+    margin: 2em auto;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.781);
+}
+
+.center{
+    text-align: center;
+}
+
+/* ----------- En tete de la lettre ------------------- */
+
+header{
+    display: grid;
+    grid-template-areas: 
+    "bg-blue bg-blue"
+    "address date"
+    "receiver receiver";
+}
+
+.bg-blue{
+    background-color: rgba(5, 23, 63, 0.959);
+    height: 50px;
+    grid-area: bg-blue;
+}
+
+time{
+    grid-area: date;
+    text-align: end;
+}
+
+address{
+    grid-area: address;
+    font-style: normal;
+}
+
+address > ul{
+    list-style: none;
+}
+
+address > ul li:first-child{
+    text-transform: uppercase;
+    font-family: 'Raleway','Courier New', Courier, monospace,sans-serif;
+    line-height: 2px;
+    font-size: 0.5em;
+}
+
+address a{
+    text-decoration: none;
+    color: #03183f;
+}
+
+
+header > ul{
+    grid-area: receiver;
+    list-style: none;
+    width: 92%;
+    text-align: center;
+}
+
+/* ---------- main content -------------- */
+
+section{
+    padding: 1em 1.6em;
+}
+
+section span{
+    text-decoration: underline;
+}
+
+section > footer{
+    text-align: right;
+}
